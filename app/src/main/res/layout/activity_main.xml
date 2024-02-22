@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cardapio"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+        />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageViewCoffee"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/cafe"
+                android:layout_margin="5dp"
+                android:onClick="escolher"
+                />
+            <ImageView
+                android:id="@+id/imageViewCake"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pedaco_de_bolo"
+                android:layout_margin="5dp"
+                android:onClick="escolher"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textViewCafe"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cafe"
+                android:gravity="center"
+                android:padding="10dp"
+                android:background="@color/yellow"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                />
+            <TextView
+                android:id="@+id/textViewBolo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/bolo"
+                android:gravity="center"
+                android:padding="10dp"
+                android:background="@color/blue"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonCalcular"
+            android:text="@string/calcular"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:onClick="escolher"
+            android:backgroundTint="@color/red"/>
+
+        <TextView
+            android:id="@+id/textViewResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/moeda"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"/>
+
+    </LinearLayout>
+</LinearLayout>

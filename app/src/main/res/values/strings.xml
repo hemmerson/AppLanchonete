@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">App_Lanchonete</string>
+    <string name="cardapio">Cardápio</string>
+    <string name="cafe">Café</string>
+    <string name="bolo">Bolo</string>
+    <string name="calcular">Calcular</string>
+    <string name="moeda">R$ 0.0</string>
+    <string name="valor_cafe">Valor da unidade R$ 2.50</string>
+    <string name="quantidade">Quantidade</string>
+    <string name="adicionar">Adicionar</string>
+</resources>
